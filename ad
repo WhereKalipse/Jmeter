@@ -1,0 +1,108 @@
+[33mcommit 5cd1ba52ee324b55dfafd13278bbb64ff21d257b[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: Leismeister Valentin <noplovl@mail.ru>
+Date:   Sat Mar 14 14:38:58 2026 +1000
+
+    Удаление Agreggate Report
+
+[1mdiff --git a/View_Result_Tree.jmx b/View_Result_Tree.jmx[m
+[1mindex 81401f4..649c19e 100644[m
+[1m--- a/View_Result_Tree.jmx[m
+[1m+++ b/View_Result_Tree.jmx[m
+[36m@@ -24,7 +24,7 @@[m
+         <boolProp name="CookieManager.controlledByThreadGroup">false</boolProp>[m
+       </CookieManager>[m
+       <hashTree/>[m
+[31m-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group">[m
+[32m+[m[32m      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="true">[m
+         <intProp name="ThreadGroup.num_threads">10</intProp>[m
+         <intProp name="ThreadGroup.ramp_time">2</intProp>[m
+         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>[m
+[36m@@ -35,9 +35,9 @@[m
+         </elementProp>[m
+       </ThreadGroup>[m
+       <hashTree>[m
+[31m-        <RecordingController guiclass="RecordController" testclass="RecordingController" testname="Recording Controller"/>[m
+[32m+[m[32m        <RecordingController guiclass="RecordController" testclass="RecordingController" testname="Recording Controller" enabled="true"/>[m
+         <hashTree>[m
+[31m-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Request">[m
+[32m+[m[32m          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Request" enabled="true">[m
+             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>[m
+             <stringProp name="HTTPSampler.method">GET</stringProp>[m
+             <boolProp name="HTTPSampler.use_keepalive">true</boolProp>[m
+[36m@@ -49,7 +49,7 @@[m
+           <hashTree/>[m
+         </hashTree>[m
+       </hashTree>[m
+[31m-      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree">[m
+[32m+[m[32m      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">[m
+         <boolProp name="ResultCollector.error_logging">false</boolProp>[m
+         <objProp>[m
+           <name>saveConfig</name>[m
+[36m@@ -84,7 +84,7 @@[m
+         <stringProp name="filename"></stringProp>[m
+       </ResultCollector>[m
+       <hashTree/>[m
+[31m-      <ProxyControl guiclass="ProxyControlGui" testclass="ProxyControl" testname="HTTP(S) Test Script Recorder">[m
+[32m+[m[32m      <ProxyControl guiclass="ProxyControlGui" testclass="ProxyControl" testname="HTTP(S) Test Script Recorder" enabled="true">[m
+         <stringProp name="ProxyControlGui.port">1080</stringProp>[m
+         <collectionProp name="ProxyControlGui.exclude_list">[m
+           <stringProp name="1658855950">.*toolbar\.live\.com.*</stringProp>[m
+[36m@@ -134,12 +134,12 @@[m
+         <stringProp name="ProxyControlGui.default_encoding">UTF-8</stringProp>[m
+       </ProxyControl>[m
+       <hashTree>[m
+[31m-        <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer">[m
+[32m+[m[32m        <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="true">[m
+           <stringProp name="ConstantTimer.delay">${T}</stringProp>[m
+           <stringProp name="RandomTimer.range">100.0</stringProp>[m
+         </UniformRandomTimer>[m
+         <hashTree/>[m
+[31m-        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree">[m
+[32m+[m[32m        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">[m
+           <boolProp name="ResultCollector.error_logging">false</boolProp>[m
+           <objProp>[m
+             <name>saveConfig</name>[m
+[36m@@ -196,43 +196,6 @@[m
+         </elementProp>[m
+       </kg.apc.jmeter.threads.SteppingThreadGroup>[m
+       <hashTree/>[m
+[31m-      <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report">[m
+[31m-        <boolProp name="ResultCollector.error_logging">false</boolProp>[m
+[31m-        <objProp>[m
+[31m-          <name>saveConfig</name>[m
+[31m-          <value class="SampleSaveConfiguration">[m
+[31m-            <time>true</time>[m
+[31m-            <latency>true</latency>[m
+[31m-            <timestamp>true</timestamp>[m
+[31m-            <success>true</success>[m
+[31m-            <label>true</label>[m
+[31m-            <code>true</code>[m
+[31m-            <message>true</message>[m
+[31m-            <threadName>true</threadName>[m
+[31m-            <dataType>true</dataType>[m
+[31m-            <encoding>false</encoding>[m
+[31m-            <assertions>true</assertions>[m
+[31m-            <subresults>true</subresults>[m
+[31m-            <responseData>false</responseData>[m
+[31m-            <samplerData>false</samplerData>[m
+[31m-            <xml>false</xml>[m
+[31m-            <fieldNames>true</fieldNames>[m
+[31m-            <responseHeaders>false</responseHeaders>[m
+[31m-            <requestHeaders>false</requestHeaders>[m
+[31m-            <responseDataOnError>false</responseDataOnError>[m
+[31m-            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>[m
+[31m-            <assertionsResultsToSave>0</assertionsResultsToSave>[m
+[31m-            <bytes>true</bytes>[m
+[31m-            <sentBytes>true</sentBytes>[m
+[31m-            <url>true</url>[m
+[31m-            <threadCounts>true</threadCounts>[m
+[31m-            <idleTime>true</idleTime>[m
+[31m-            <connectTime>true</connectTime>[m
+[31m-          </value>[m
+[31m-        </objProp>[m
+[31m-        <stringProp name="filename"></stringProp>[m
+[31m-      </ResultCollector>[m
+[31m-      <hashTree/>[m
+     </hashTree>[m
+   </hashTree>[m
+ </jmeterTestPlan>[m
