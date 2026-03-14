@@ -11,7 +11,7 @@
         <collectionProp name="Arguments.arguments"/>
       </Arguments>
       <hashTree/>
-      <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults">
+      <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults" enabled="true">
         <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
           <collectionProp name="Arguments.arguments"/>
         </elementProp>
@@ -24,7 +24,7 @@
         <boolProp name="CookieManager.controlledByThreadGroup">false</boolProp>
       </CookieManager>
       <hashTree/>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Registration">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Registration" enabled="true">
         <intProp name="ThreadGroup.num_threads">6</intProp>
         <intProp name="ThreadGroup.ramp_time">1</intProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
@@ -35,11 +35,11 @@
         </elementProp>
       </ThreadGroup>
       <hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Transaction Controller - Open main page">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Transaction Controller - Open main page" enabled="true">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="registration-464">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="registration-464" enabled="true">
             <stringProp name="HTTPSampler.domain">webtours.load-test.ru</stringProp>
             <stringProp name="HTTPSampler.port">1080</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
@@ -96,7 +96,7 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="registration-466">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="registration-466" enabled="true">
             <stringProp name="HTTPSampler.domain">webtours.load-test.ru</stringProp>
             <stringProp name="HTTPSampler.port">1080</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
@@ -153,17 +153,17 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer">
+          <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="true">
             <stringProp name="ConstantTimer.delay">2000</stringProp>
             <stringProp name="RandomTimer.range">3000</stringProp>
           </UniformRandomTimer>
           <hashTree/>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Transaction Controller - Open registration page">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Transaction Controller - Open registration page" enabled="true">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="registration-468">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="registration-468" enabled="true">
             <stringProp name="HTTPSampler.domain">webtours.load-test.ru</stringProp>
             <stringProp name="HTTPSampler.port">1080</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
@@ -234,17 +234,17 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer">
+          <UniformRandomTimer guiclass="UniformRandomTimerGui" testclass="UniformRandomTimer" testname="Uniform Random Timer" enabled="true">
             <stringProp name="ConstantTimer.delay">2000</stringProp>
             <stringProp name="RandomTimer.range">3000</stringProp>
           </UniformRandomTimer>
           <hashTree/>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Transaction Controller - Submit Registration">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Transaction Controller - Submit Registration" enabled="true">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="registration-470">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="registration-470" enabled="true">
             <stringProp name="HTTPSampler.domain">webtours.load-test.ru</stringProp>
             <stringProp name="HTTPSampler.port">1080</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
@@ -377,11 +377,11 @@
           </UniformRandomTimer>
           <hashTree/>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Transaction Controller - Open Personal account">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Transaction Controller - Open Personal account" enabled="true">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="registration-471">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="registration-471" enabled="true">
             <stringProp name="HTTPSampler.domain">webtours.load-test.ru</stringProp>
             <stringProp name="HTTPSampler.port">1080</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
@@ -438,7 +438,7 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="registration-472">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="registration-472" enabled="true">
             <stringProp name="HTTPSampler.domain">webtours.load-test.ru</stringProp>
             <stringProp name="HTTPSampler.port">1080</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
@@ -502,7 +502,7 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="registration-473">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="registration-473" enabled="true">
             <stringProp name="HTTPSampler.domain">webtours.load-test.ru</stringProp>
             <stringProp name="HTTPSampler.port">1080</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
@@ -565,11 +565,11 @@
           </UniformRandomTimer>
           <hashTree/>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Transaction Controller - Log Out">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Transaction Controller - Log Out" enabled="true">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="registration-474">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="registration-474" enabled="true">
             <stringProp name="HTTPSampler.domain">webtours.load-test.ru</stringProp>
             <stringProp name="HTTPSampler.port">1080</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
@@ -626,7 +626,7 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="registration-475">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="registration-475" enabled="true">
             <stringProp name="HTTPSampler.domain">webtours.load-test.ru</stringProp>
             <stringProp name="HTTPSampler.port">1080</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
@@ -684,7 +684,7 @@
             <hashTree/>
           </hashTree>
         </hashTree>
-        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config">
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
           <stringProp name="delimiter">,</stringProp>
           <stringProp name="fileEncoding"></stringProp>
           <stringProp name="filename">C:/apache-jmeter-5.6.3/apache-jmeter-5.6.3/bin/test-scripts/users.csv</stringProp>
@@ -698,17 +698,17 @@
         <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Buy_ticket">
-        <intProp name="ThreadGroup.num_threads">6</intProp>
+        <intProp name="ThreadGroup.num_threads">1</intProp>
         <intProp name="ThreadGroup.ramp_time">1</intProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller">
-          <stringProp name="LoopController.loops">1</stringProp>
+          <stringProp name="LoopController.loops">50</stringProp>
           <boolProp name="LoopController.continue_forever">false</boolProp>
         </elementProp>
       </ThreadGroup>
       <hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Transaction Controller - Open main page">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Transaction Controller - Open main page" enabled="true">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
@@ -1304,7 +1304,7 @@
                 <elementProp name="departDate" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
                   <stringProp name="Argument.name">departDate</stringProp>
-                  <stringProp name="Argument.value">${__timeShift(yyyy-MM-dd,,P${__Random(1,30)}d)}</stringProp>
+                  <stringProp name="Argument.value">${__timeShift(yyyy-MM-dd,,P${__Random(1,30)}d,)}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
@@ -1318,7 +1318,7 @@
                 <elementProp name="returnDate" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
                   <stringProp name="Argument.name">returnDate</stringProp>
-                  <stringProp name="Argument.value">${__timeShift(yyyy-MM-dd,,P${__Random(1,30)}d)}</stringProp>
+                  <stringProp name="Argument.value">${__timeShift(yyyy-MM-dd,,P${__Random(1,30)}d,)}</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
@@ -1623,7 +1623,7 @@
                 <elementProp name="outboundFlight" elementType="HTTPArgument">
                   <boolProp name="HTTPArgument.always_encode">true</boolProp>
                   <stringProp name="Argument.name">outboundFlight</stringProp>
-                  <stringProp name="Argument.value">000;0;03/15/2026</stringProp>
+                  <stringProp name="Argument.value">00${__Random(0,3,)};0;03/15/2026</stringProp>
                   <stringProp name="Argument.metadata">=</stringProp>
                   <boolProp name="HTTPArgument.use_equals">true</boolProp>
                 </elementProp>
@@ -1905,7 +1905,7 @@
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="buy-544" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="buy-544">
             <stringProp name="HTTPSampler.domain">webtours.load-test.ru</stringProp>
             <stringProp name="HTTPSampler.port">1080</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
@@ -1962,7 +1962,7 @@
             </HeaderManager>
             <hashTree/>
           </hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="buy-545" enabled="true">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="buy-545">
             <stringProp name="HTTPSampler.domain">webtours.load-test.ru</stringProp>
             <stringProp name="HTTPSampler.port">1080</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
@@ -2020,7 +2020,7 @@
             <hashTree/>
           </hashTree>
         </hashTree>
-        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config">
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
           <stringProp name="delimiter">,</stringProp>
           <stringProp name="fileEncoding"></stringProp>
           <stringProp name="filename">C:/apache-jmeter-5.6.3/apache-jmeter-5.6.3/bin/test-scripts/users.csv</stringProp>
@@ -2033,7 +2033,7 @@
         </CSVDataSet>
         <hashTree/>
       </hashTree>
-      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Return_ticket">
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Return_ticket" enabled="true">
         <intProp name="ThreadGroup.num_threads">6</intProp>
         <intProp name="ThreadGroup.ramp_time">1</intProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
@@ -2044,11 +2044,11 @@
         </elementProp>
       </ThreadGroup>
       <hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Transaction Controller - Open main page">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Transaction Controller - Open main page" enabled="true">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
-          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="buy-547">
+          <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="buy-547" enabled="true">
             <stringProp name="HTTPSampler.domain">webtours.load-test.ru</stringProp>
             <stringProp name="HTTPSampler.port">1080</stringProp>
             <stringProp name="HTTPSampler.protocol">http</stringProp>
@@ -2178,7 +2178,7 @@
           </UniformRandomTimer>
           <hashTree/>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Transaction Controller - User Log In">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Transaction Controller - User Log In" enabled="true">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
@@ -2294,7 +2294,7 @@
           </UniformRandomTimer>
           <hashTree/>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Transaction Controller - Search List of Tickets">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Transaction Controller - Search List of Tickets" enabled="true">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
@@ -2425,7 +2425,7 @@
           </UniformRandomTimer>
           <hashTree/>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Transaction Controller - Open Itinerary Page">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Transaction Controller - Open Itinerary Page" enabled="true">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
@@ -2556,7 +2556,7 @@
           </UniformRandomTimer>
           <hashTree/>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Transaction Controller - Return all tickets">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Transaction Controller - Return all tickets" enabled="true">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
@@ -2701,7 +2701,7 @@
           </UniformRandomTimer>
           <hashTree/>
         </hashTree>
-        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Transaction Controller - Log Out">
+        <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Transaction Controller - Log Out" enabled="true">
           <boolProp name="TransactionController.includeTimers">false</boolProp>
         </TransactionController>
         <hashTree>
@@ -2820,7 +2820,7 @@
             <hashTree/>
           </hashTree>
         </hashTree>
-        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config">
+        <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="CSV Data Set Config" enabled="true">
           <stringProp name="delimiter">,</stringProp>
           <stringProp name="fileEncoding"></stringProp>
           <stringProp name="filename">C:/apache-jmeter-5.6.3/apache-jmeter-5.6.3/bin/test-scripts/users.csv</stringProp>
